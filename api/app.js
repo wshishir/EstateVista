@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json())
 
-app.use(cookieParser);
+app.use(cookieParser())
 app.use("/api/auth", authRoute);
 app.use("/api/users", postRoute);
 
